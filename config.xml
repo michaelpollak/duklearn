@@ -3,8 +3,8 @@
         xmlns:gap = "http://phonegap.com/ns/1.0"
         xmlns:android = "http://schemas.android.com/apk/res/android"
         id        = "com.duklearn"
-        versionCode = "20200"
-        version   = "3.3.2">
+        versionCode = "2017"
+        version   = "0.1.6">
     <name>DUK Learn</name>
   <description>
 		E-Learning App der Donau-Universität Krems.
@@ -14,7 +14,7 @@
     </author>
 
     <gap:config-file platform="ios" parent="CFBundleShortVersionString">
-        <string>3.3.2</string>
+        <string>0.1.6</string>
     </gap:config-file>
 
     <gap:platform name="ios" />
@@ -124,9 +124,15 @@
         <param name="MICROPHONE_USAGE_DESCRIPTION" value="We'd like to access your microphone to let you record an audio"/>
     </gap:plugin>
     <gap:plugin name="cordova-plugin-device" source="npm" />
-	<gap:plugin name="cordova-plugin-file" source="npm" spec="~4.3.1" />
+    <!-- that stuff is buggy...
+    <gap:plugin name="cordova-plugin-file" source="npm" /> 
+    <gap:plugin name="cordova-plugin-file-transfer" source="npm" /> 
+    -->
+    
+    <gap:plugin name="cordova-plugin-file" source="npm" spec="~4.3.1" />
+	<gap:plugin name="cordova-plugin-file-transfer" source="npm" spec="~1.6.1" />
 
-<gap:plugin name="cordova-plugin-file-transfer"  source="npm" spec="~1.6.1" />
+
     <gap:plugin name="cordova-plugin-globalization" source="npm" />
     <gap:plugin name="cordova-plugin-inappbrowser" source="npm" />
     <gap:plugin name="cordova-plugin-network-information" source="npm" />
