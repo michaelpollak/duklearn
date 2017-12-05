@@ -117,22 +117,16 @@
         <splash src="resources/ios/splash/Default-Portrait@~ipadpro.png" width="2048" height="2732"/>
     </platform>
 
-    <gap:plugin name="cordova-plugin-camera" source="npm" />
+	
+	<gap:plugin name="cordova-plugin-camera" source="npm" />
     <gap:plugin name="cordova-plugin-media-capture" source="npm">
         <param name="CAMERA_USAGE_DESCRIPTION" value="We'd like to access your camera to let you take a photo"/>
         <param name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="We'd like to access your photo library to let you pick a photo"/>
         <param name="MICROPHONE_USAGE_DESCRIPTION" value="We'd like to access your microphone to let you record an audio"/>
     </gap:plugin>
     <gap:plugin name="cordova-plugin-device" source="npm" />
-    <!-- that stuff is buggy...
-    <gap:plugin name="cordova-plugin-file" source="npm" /> 
-    <gap:plugin name="cordova-plugin-file-transfer" source="npm" /> 
-    -->
-    
-    <gap:plugin name="cordova-plugin-file" source="npm" spec="~4.3.1" />
-	<gap:plugin name="cordova-plugin-file-transfer" source="npm" spec="~1.6.1" />
-
-
+    <gap:plugin name="cordova-plugin-file" source="npm" />
+    <gap:plugin name="cordova-plugin-file-transfer" source="npm" />
     <gap:plugin name="cordova-plugin-globalization" source="npm" />
     <gap:plugin name="cordova-plugin-inappbrowser" source="npm" />
     <gap:plugin name="cordova-plugin-network-information" source="npm" />
@@ -141,13 +135,6 @@
     <gap:plugin name="cordova-plugin-splashscreen" source="npm" />
     <gap:plugin name="cordova-universal-clipboard" source="npm" />
     <gap:plugin name="nl.kingsquare.cordova.background-audio" source="npm" />
-    
-    <!-- splash screen stuff -->
-    <preference name="SplashMaintainAspectRatio" value="true" />
-	<preference name="SplashShowOnlyFirstTime" value="true" />
-	<preference name="SplashScreenSpinnerColor" value="white" />
-	<preference name="ShowSplashScreen" value="false" /> <!-- defaults to "true" -->
-
 
     <gap:plugin name="phonegap-plugin-push" source="npm" version="1.9.2">
         <param name="SENDER_ID" value="694767596569" />
@@ -159,7 +146,15 @@
     <gap:plugin name="cordova-plugin-zip" source="npm" />
     <gap:plugin name="cordova-plugin-local-notifications-mm" source="npm" />
     <gap:plugin name="net.tunts.webintent" spec="https://github.com/Tunts/WebIntent.git" source="git" />
-    <gap:plugin name="ch.ti8m.documenthandler" spec="https://github.com/ti8m/DocumentHandler.git" source="git" />
+<gap:plugin name="ch.ti8m.documenthandler" spec="https://github.com/ti8m/DocumentHandler.git" source="git" />
+	
+    
+    <!-- splash screen stuff -->
+    <preference name="SplashMaintainAspectRatio" value="true" />
+	<preference name="SplashShowOnlyFirstTime" value="true" />
+	<preference name="SplashScreenSpinnerColor" value="white" />
+	<preference name="ShowSplashScreen" value="false" /> <!-- defaults to "true" -->
+
 
     <gap:config-file platform="android" parent="/manifest">
          <application android:debuggable="false" />
