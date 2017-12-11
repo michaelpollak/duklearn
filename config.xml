@@ -4,7 +4,7 @@
         xmlns:android = "http://schemas.android.com/apk/res/android"
         id        = "com.duklearn"
         versionCode = "2017"
-        version   = "0.1.7">
+        version   = "0.1.8">
     <name>DUK Learn</name>
   <description>
 		E-Learning App der Donau-Universität Krems.
